@@ -154,21 +154,24 @@ body {
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-#discordbutton {
+.button-div {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-#discordbutton > p {
-	color: white;
+.button-text {
 	font-family: 'Kanit', sans-serif;
-	font-size: 1.2rem;
-	margin-right: 0.5rem;
+	font-size: 1.6rem;
+	margin-right: 0.7rem;
 }
 
-#discordlogo {
-	height: 30px;
+.button-logo {
+	height: 40px;
+}
+
+#discordbutton > p {
+	color: var(--patreonBackground);
 }
 
 #patreonlink {
@@ -186,26 +189,13 @@ body {
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-#patreonbutton {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 #patreonbutton > p {
 	color: var(--patreonBackground);
-	font-family: 'Kanit', sans-serif;
-	font-size: 1.2rem;
-	margin-right: 0.7rem;
-}
-
-#patreonlogo {
-	height: 25px;
 }
 
 .main-section {
 	padding-top: 5vh;
-	margin-left: 300px;
+	margin-left: 220px;
 	color: white;
 }
 
@@ -243,7 +233,8 @@ footer {
 address {
 	text-align: center;
 	margin-top: 60px;
-	font-size: 1.1rem;
+	font-size: 1.3rem;
+	font-weight: 600;
 }
 
 @keyframes discordRotate {

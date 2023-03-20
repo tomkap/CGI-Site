@@ -19,7 +19,7 @@ function discordHover() {
 }
 
 function discordLeave() {
-	let disc = document.getElementById("discordlogo");
+	let disc = document.getElementById("discordlogo");;
 	disc.style.animation = null;
 }
 
