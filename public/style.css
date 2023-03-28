@@ -1,0 +1,294 @@
+:root {
+	--background1: #282828;
+	--main: #fec40b;
+	--accent1: #FFCC24;
+	--accent2: #B38A04;
+	--discord: #7289da;
+	--patreonBackground: #f6f7fa;
+	--patreonMain: #f1465a;
+}
+
+/*Makes it so clicking links to elements smoothly scrolls to them instead of teleporting.*/
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+html {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+}
+
+body {
+	width: 100%;
+	margin: 0;
+	background: var(--background1);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#scroll_message {
+	position: absolute;
+	justify-self: center;
+	top: 90vh;
+	
+	font-family: 'Kanit', sans-serif;
+	font-size: 2rem;
+	color: white;
+	opacity: 0.7;
+
+	transition: all 0.4s ease-in-out;
+}
+
+#scroll_message:hover {
+	cursor: default;
+}
+
+#main {
+	width: 70%;
+	min-width: 800px;
+}
+
+#NAV {
+	position: sticky;
+	top: calc(50vh - 210px);
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	margin-bottom: 20px;
+}
+
+#ProgBar {
+	margin-top: 15px;
+	width: 3px;
+	background: rgba(255, 255, 255, 0.3);
+	height: 200px;
+}
+
+#ProgMarker {
+	width: 3px;
+	background: var(--accent1);
+}
+
+#nav-bar {
+	top: calc(50vh - 200px);
+	margin-left: 15px;
+	display: flex;
+	flex-direction: column;
+}
+
+.nav-link {
+	margin-top: 1rem;
+	
+	text-decoration: none;
+	color: white;
+	font-family: 'Cardo', serif;
+	font-size: 3rem;
+	
+	opacity: 0.7;
+	transition: all 0.4s ease-in-out;
+}
+
+.nav-link:first-of-type {
+	margin-top: 0;
+}
+
+#nav-bar:hover > .nav-link {
+	opacity: 0.1;
+}
+
+#nav-bar:hover > .nav-link:hover {
+	opacity: 1;
+	color: var(--accent1);
+}
+
+#Logo_Section {
+	position: absolute;
+	top: calc(50vh - 300px);
+	left: calc(50vw - 200px);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/*Changes the dimensions of the CGI logo*/
+#cgilogo {
+	width: 400px;
+	height: 400px;
+}
+
+/*The link element around the CGI logo*/
+#logolink {
+	width: 400px;
+	height: 400px;
+	border-radius: 50%;
+	border: 2px solid black;
+	transition: box-shadow 0.2s ease-in-out;
+}
+
+input {
+	position: absolute;
+	background: none;
+	border: none;
+	width: 400px;
+	height: 400px;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+#logolink:hover {
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+#discordlink {
+	background: var(--discord);
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 15px;
+	margin-top: 50px;
+
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+}
+
+#discordlink:hover {
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.button-div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button-text {
+	font-family: 'Kanit', sans-serif;
+	font-size: 1.6rem;
+	margin-right: 0.7rem;
+}
+
+.button-logo {
+	height: 40px;
+}
+
+#discordbutton > p {
+	color: var(--patreonBackground);
+}
+
+#patreonlink {
+	background: var(--patreonMain);
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 15px;
+	margin-top: 10px;
+
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+}
+
+#patreonlink:hover {
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#patreonbutton > p {
+	color: var(--patreonBackground);
+}
+
+.main-section {
+	padding-top: 5vh;
+	margin-left: 220px;
+	color: white;
+}
+
+#About_Section {
+	margin-top: 100vh;
+	color: white;
+}
+
+h1 {
+	font-size: 5rem;
+	font-family: "Kanit", "Tahoma"
+}
+
+.main-section > p {
+	font-size: 2rem;
+	width: 80%;
+}
+
+#rule-agreement {
+	margin-top: -5rem;
+	font-family: "Kanit", "Tahoma";
+	font-size: 2rem;
+	font-weight: 100;
+}
+
+.rule-container {
+	margin-left: 1rem;
+}
+
+/* Rule headers */
+.rule-container > h2 {
+	font-size: 3rem;
+	text-decoration: underline var(--accent2);
+	font-family: 'Josefin Slab', 'Times New Roman';
+	font-weight: 700;
+}
+
+/* Rule paragraphs */
+.rule-container > p {
+	margin-left: 1rem;
+	padding-left: 1rem;
+
+	border-left: 5px solid var(--accent2);
+	border-radius: 8px;
+	
+	font-size: 1.5rem;
+	font-family: 'Kanit', 'Tahoma';
+	font-weight: 300;
+}
+
+footer {
+	box-sizing: border-box;
+	margin-top: 10vh;
+	padding: 60px;
+	padding-bottom: 30px;
+	width: 100%;
+	color: var(--patreonMain);
+	background: var(--patreonBackground);
+	border-top: 20px solid var(--patreonMain);
+}
+
+#footer_information {
+	justify-content: center;
+	text-align: center;
+	max-width: 60vw;
+	min-width: 800px;
+	margin: auto;
+}
+
+#footer_information > h1:hover {
+	cursor: default;
+}
+
+address {
+	text-align: center;
+	margin-top: 60px;
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+
+address:hover {
+	cursor: default;
+}
+
+@keyframes discordRotate {
+	0% {transform: rotate(0deg);}
+	15% {transform: rotate(-25deg);}
+	75% {transform: rotate(385deg);}
+	100% {transform: rotate(360deg);}
+}
