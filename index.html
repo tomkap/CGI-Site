@@ -3,21 +3,25 @@
 
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=0">
+
+	<link rel='icon' href="cgi_logo.png">
+	<title>[CGI] Cute Girls Infantry Community Website nyaaa~~!</title>
+	<meta name="description"
+		content="We're a community of cute girls dedicated to either making you cringe or have great fun! We run our own server in Squad for all your uwu needs :3" />
+	<meta rel="image_src" href="cgi_logo.png" />
 	<link rel='stylesheet' href='style.css'>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Kanit&display=swap" rel="stylesheet">
+	<link <link
+		href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Josefin+Slab:wght@100;200;300;400;500;600;700&family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
 	<script src="script.js"></script>
-	<title>Cute Girls Infantry</title>
-	<link rel='icon' href="cgi_logo.png">
 </head>
 
 <body>
 	<div id='main'>
-		<!--Progress bar marking scroll position and navigation bar.-->
 		<p id="scroll_message">Scroll down for more...</p>
 		<div id="NAV">
 			<div id="ProgBar">
@@ -30,12 +34,13 @@
 			</nav>
 		</div>
 
-		<!--Contains the logo and the discord button.-->
 		<div id="Logo_Section">
-			<a href="steam://rungameid/393380// +connect 148.251.50.244:7787" id='logolink'>
+			<a id='logolink'>
+				<input type="button" onclick="playAudio()"></button>
+				<audio id="audio" src="CGI_Reporting.mp3"></audio>
 				<img src="cgi_logo.png" id="cgilogo" loading="lazy">
 			</a>
-			<a href="https://discord.gg/nPWeBhBh7z" id="discordlink" onmouseover="discordHover()" onmouseout="discordLeave()">
+			<a href="\\cgi-clan.eu/discord" id="discordlink" onmouseover="discordHover()" onmouseout="discordLeave()">
 				<div id="discordbutton" class="button-div">
 					<p class="button-text">Join us on</p>
 					<img src="discord.png" id="discordlogo" class="button-logo">
@@ -61,12 +66,253 @@
 
 		<div id='Rules_Section' class='main-section'>
 			<h1>Server Rules</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-				magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-				pariatur.
-				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
+			<p id="rule-agreement">By playing on the CGI server you agree to the rules.</p>
+
+			<!--1.1 Administration Policies-->
+			<div class="rule-container">
+				<h2>1.1 Administration Policies</h2>
+				<p>Do not argue with admins and please obey any given warning. Any
+					admin verdict is final and can only be appealed via our Discord
+					support-tool. If you decide to argue with an admin in game chat,
+					it will result in a kick or ban from our server.</p>
+				<p>To contact our admins, please type !admin in chat and type your
+					reason after it. Any message that just contains !admin will be
+					ignored. Do NOT use the admin ping to spam the admins.</p>
+				<p>Impersonating an admin or any CGI member is prohibited and will
+					result in a permanent ban from our servers.</p>
+			</div>
+
+			<!--1.2 General Etiquette-->
+			<div class="rule-container">
+				<h2>1.2 General Etiquette</h2>
+				<p>We do not tolerate any racist, sexist, extreme-nationalist, or other
+					discriminatory or insulting behaviors. This applies to text chat,
+					voice chat, squad names and usernames. This kind of behavior will
+					lead to a permanent ban.</p>
+				<p>We do not tolerate any form of hacking and cheating. This kind of
+					behavior will lead to a permanent ban.</p>
+				<p>We do not tolerate any kind of intentional team killing, even in
+					retaliation. If you have a problem, please call an admin to support
+					you. Intentional team kills will lead to a ban from our server.</p>
+				<p>Discussion of team-internal intelligence is strictly prohibited.
+					Sharing such information (ticket count, location of FOBs, vehicles,
+					etc.) will result in administrative measures. AKA Ghosting.</p>
+				<p>We do not allow advertisement of any kind in chat, usernames or
+					squad names.</p>
+			</div>
+
+			<!--1.3 Communication Policy-->
+			<div class="rule-container">
+				<h2>1.3 Communication Policy</h2>
+				<p>Please always be respectful to one another.</p>
+				<p>Music/audio spam is unwanted on our server. This is valid
+					permanently in the staging phase, the start of the round, the round
+					itself as well as during the end screen. If you are asked to stop
+					playing music/sounds by any player, that is considered a warning, as
+					the music is disrupting the gameplay experience. Admins have the
+					final verdict on what is a violation.</p>
+				<p>English is the official language of our server; however, every
+					player is welcome. We require squad leaders to have a basic level of
+					spoken English language so they can communicate with other squad
+					leaders. </p>
+				<p>Ensure you use English wherever possible.</p>
+				<p>Within squads, any language is permitted. This means that
+					you are allowed to speak any language that you wish, but please state
+					your squad language in your squad name. You are NOT allowed to lock
+					your squad due to using another language.</p>
+			</div>
+
+			<!--2.1 General Rules-->
+			<div class="rule-container">
+				<h2>2.1 General Rules</h2>
+				<p>Leadership roles MUST have and use a microphone as well as a squad
+					leader kit.</p>
+				<p>All infantry squads MUST be led by an infantry squad leader. There
+					are no exceptions.</p>
+				<p>All vehicle squads MUST be led by a lead crewman. There are no
+					exceptions.</p>
+				<p>Players who create a squad MUST have every intention to lead the
+					squad. If you are lacking this intention, do not create a squad. If
+					you find yourself with a dropped squad lead role, please ask if
+					someone wants to have it. Otherwise, you are asked to disband the
+					squad.</p>
+				<p>We require teamwork on this server to achieve our server goals. If
+					you are playing in an obstructive way, including not communicating
+					with the team, you may be removed from the server.</p>
+				<p>We ask everybody to actively help in balancing the server,
+					especially when asked by an admin. We expect all clans, communities
+					and experienced players to support the balancing-progress.</p>
+				<p>Every player is obliged to join a squad. Unassigned players are
+					considered AFK and can be kicked at any point.</p>
+				<p>On our server, you are NOT allowed to lock your squad except for:
+					Infantry squads with 6 or more members,
+					Logistics and helo squads with 3 or less members,
+					Crewman-Vehicle squads with 2 – 4 members,
+					Admin squads.
+					However, you must unlock your squad when asked by an admin.</p>
+				<p>Please be civil when kicking people from your squad. If you are
+					kicked from a squad, simply join a different squad. If the reason you
+					were kicked conflicts with one of our server rules (racism, sexism,
+					discrimination) please report it. However this is not a free license
+					to not respect our locked-squads rule, soft-locking your squad will
+					result in admin intervention.</p>
+			</div>
+
+			<!--2.2 Teamkilling-->
+			<div class="rule-container">
+				<h2>2.2 Teamkilling</h2>
+				<p>Intentional teamkilling is strictly prohibited on our server.
+					Revenge team killing is also prohibited. If you find a player
+					trolling or teamkilling, contact an admin.</p>
+				<p>Teamkills can happen in the heat of the battle. This is why we
+					should acknowledge them and apologize for teamkills in all chat. Not
+					acknowledging teamkills might result in administrative measures.</p>
+				<p>If you are found guilty of intentionally teamkilling and playing it
+					off as an accident, you will potentially face a permanent ban.</p>
+				<p>The only exceptions to intentional team killing are:
+					Helping a stuck player to respawn, suicide bikes.
+					Please explain the situation in chat regardless.</p>
+			</div>
+
+			<!--2.3 Vehicle Claims-->
+			<div class="rule-container">
+				<h2>2.3 Vehicle Claims</h2>
+				<p>To gain a claim on a vehicle, in your squad name you must include:
+					MBT – To claim a main battle tank,
+					IFV/APC – To claim any other vehicle requiring a crewman kit to
+					operate,
+					HELI/HELO – To claim a helicopter,
+					LOGI – To claim a logistics truck.</p>
+				<p>You only have a claim if you also have enough players in your squad
+					to crew your vehicle. You are then allowed to keep this vehicle over
+					other squads.</p>
+				<p>If there are multiple valid claims on the same vehicle, it will
+					always be the first squad in the vehicle.</p>
+				<p>Note that every squad is only allowed to claim one vehicle by this
+					system. Feel free to use more than one vehicle, if they would
+					otherwise be unused in base. If a squad opens a claim on that
+					vehicle, please hand it over.</p>
+				<p>If you have multiple claims in your squad name, all claims are
+					invalid. Calling your squad “ARMOR” is not considered a claim at all.</p>
+				<p>Please note, that any other vehicle that does not require a crewman
+					kit (e.g. the Tigr-M, M-ATV, TAPV, etc.) cannot be claimed, meaning
+					that your squad is still defined as an infantry squad by our rules.
+				</p>
+				<p>A Command Squad is always defined as an infantry squad by our rules.</p>
+			</div>
+
+			<!--2.4 Infantry Squads-->
+			<div class="rule-container">
+				<h2>2.4 Infantry Squads</h2>
+				<p>Infantry squads are defined as the majority of players in the squad
+					having infantry squad roles and having no valid vehicle claim.</p>
+				<p>A squad leader is only allowed to use another kit due to a valid
+					combat situation, such as repairing, building or using AT. However
+					this only allowed for a brief moment and the leader has to revert to
+					his original kit as soon as possible. If an admin asks you to get a
+					leader kit, you must switch to the kit at the earliest available
+					opportunity.</p>
+				<p>Infantry squads are free to take whatever vehicle assets they want,
+					as long as they is not already claimed by another squad. These squads
+					can not create a claim on any vehicle.</p>
+			</div>
+
+			<!--2.5 Crewman-Vehicle Squads-->
+			<div class="rule-container">
+				<h2>2.5 Crewman-Vehicle Squads</h2>
+				<p>Vehicle squads are defined as the players in the squad are operating
+					a claimable vehicle that needs crewman kits.</p>
+				<p>The squad leader must then use the lead crewman kit. This squad has
+					to have a valid claim on a vehicle, as well as a minimum of 2 and a
+					maximum of 4 players in the squad to run the vehicle. If these
+					criteria are not fulfilled, your claim is invalid and your squad may
+					at any point be disbanded, followed by a kick or even ban from the
+					server at repeated violation.</p>
+				<p>Any vehicle that needs a crewman kit to be operated needs to be
+					operated by at least two players at any time. You are not allowed to
+					pick up your member in the field going from base.</p>
+				<p>If you find your vehicle one-manned in the field due to the other
+					player getting killed or disconnecting, you have to attempt to fall
+					back to a safe HAB to pick up another player at the earliest
+					available opportunity. You are not allowed to engage enemies whilst
+					being solo in a vehicle, except for defence.</p>
+			</div>
+
+			<!--2.6 Logistics and Helicopter Squads-->
+			<div class="rule-container">
+				<h2>2.6 Logistics and Helicopter Squads</h2>
+				<p>Logistic squads are defined as squads that are not actively
+					participating in combat, but instead focus on carrying building or
+					ammunition materials as well as other squads’ infantry to certain
+					points of the map to reinforce and resupply them.</p>
+				<p>Logistics may defend themselves if being attacked, but should not
+					participate in any large engagements with enemy troops.</p>
+				<p>The squad name has to make visible that this squad is focusing on
+					logistics only. By this, one logi is claimed for your squad.</p>
+				<p>Helicopter squads are defined as squads that focus on carrying
+					building or ammunition material as well as other squads’ infantry to
+					certain points of the map to reinforce and resupply them. In contrast
+					to logistic squads, a helicopter squad may engage enemies with their
+					vehicle or be used to scout out enemy positions and their movement.</p>
+				<p>The squad has to have a valid claim on a helicopter asset. The squad
+					leader has to use a specialised role kit (lead pilot kit) at all
+					times. They are allowed to use another kit just like crewman-vehiclesquad leaders, but have to change back as
+					soon as possible.</p>
+				<p>Before taking off in the helicopter, please, make sure that you have
+					the sufficient skill to fly it. Our server is not the practice range.
+					Flying a helicopter without any prior experience may be considered
+					asset-wasting.</p>
+				<p>If an admin asks you to get a squad leader kit, you must switch to
+					the kit at the earliest available opportunity.</p>
+			</div>
+
+			<!--2.7 Wasting Assets-->
+			<div class="rule-container">
+				<h2>2.7 Wasting Assets</h2>
+				<p>Intentionally wasting assets is strictly prohibited and will result
+					in administrative measures.</p>
+				<p>Nevertheless we do not consider bad decisions that lead to loss of
+					assets as asset-wasting in the sense of this rule.
+					Some examples of asset-wasting are
+					Driving assets into deep water or off the map,
+					Intentionally abandoning assets in the field,
+					Intentionally crashing your vehicle into enemy lines/assets, with the
+					exception of VBIEDs,
+					Trying to fly helicopters without training or/and experience</p>
+				<p>Losing vehicle after vehicle might be considered asset wasting and
+					will result in another player or admin asking you to cease this
+					behaviour. If you continue, there will be actions taken against you.</p>
+				<p>Intentionally digging down friendly FOBs/HABs and structures or
+					destroying friendly vehicles without a valid reason is prohibited,
+					except when:
+					Destroying unrecoverable abandoned vehicles,
+					Removing a structure due to bad placement with the intention to
+					rebuild it,
+					Removing a friendly FOB to prevent enemies from destroying it.</p>
+			</div>
+
+			<!--2.8 Main Base Camping-->
+			<div class="rule-container">
+				<h2>2.8 Main Base Camping</h2>
+				<p>When a main base is considered camped depends on the actual case.
+					The admin decision is final. If there are issues, please open a
+					complaint on our discord server. Do not discuss the verdict.</p>
+				<p>Main base camping is defined as placing assets, infantry or
+					explosives, at any distance, with the intent to destroy or harm enemy
+					assets that are entering or leaving the enemy main base. If you are
+					within a 400m range of the enemy base, you are most likely considered
+					main base camping.</p>
+				<p>The only exceptions for being within 400m of the enemy base are:
+					When the points or objectives are within that boundary or enemies are
+					fighting from it,
+					When you are maneuvering or flanking, it’s advised to pass through
+					this space without engaging enemies entering or leaving main,
+					If a FOB is placed inside this radius to their main base, then all
+					assets in the area are considered fair game.</p>
+				<p>If an admin considers your actions base camping, you will be warned.
+					If you decide to ignore this, an administrative action will be taken
+					against you.</p>
+			</div>
 		</div>
 	</div>
 	<footer id="Patreon_Section">
@@ -76,7 +322,5 @@
 		<address>Copyright © 2023 by Cute Girls Infantry. All rights reserved :3</address>
 	</footer>
 </body>
-
-<!--https://discord.gg/nPWeBhBh7z-->
 
 </html>

@@ -40,3 +40,8 @@ function welcomeMessage() {
 	let message = document.getElementById("scroll_message")
 	message.style.opacity = 0;
 }
+
+function playAudio() {
+        var audio = document.getElementById("audio");
+        audio.play();
+}

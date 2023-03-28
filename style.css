@@ -6,11 +6,6 @@
 	--discord: #7289da;
 	--patreonBackground: #f6f7fa;
 	--patreonMain: #f1465a;
-	--gray1: rgba(0, 0, 0, 0.1);
-  --gray2: rgba(0, 0, 0, 0.2);
-  --gray3: rgba(0, 0, 0, 0.3);
-  --gray4: rgba(0, 0, 0, 0.4);
-  --gray5: rgba(0, 0, 0, 0.5);
 }
 
 /*Makes it so clicking links to elements smoothly scrolls to them instead of teleporting.*/
@@ -53,7 +48,7 @@ body {
 }
 
 #main {
-	width: 60%;
+	width: 70%;
 	min-width: 800px;
 }
 
@@ -75,7 +70,7 @@ body {
 
 #ProgMarker {
 	width: 3px;
-	background: white;
+	background: var(--accent1);
 }
 
 #nav-bar {
@@ -107,6 +102,7 @@ body {
 
 #nav-bar:hover > .nav-link:hover {
 	opacity: 1;
+	color: var(--accent1);
 }
 
 #Logo_Section {
@@ -133,6 +129,16 @@ body {
 	border-radius: 50%;
 	border: 2px solid black;
 	transition: box-shadow 0.2s ease-in-out;
+}
+
+input {
+	position: absolute;
+	background: none;
+	border: none;
+	width: 400px;
+	height: 400px;
+	border-radius: 50%;
+	z-index: 1;
 }
 
 #logolink:hover {
@@ -206,10 +212,44 @@ body {
 
 h1 {
 	font-size: 5rem;
+	font-family: "Kanit", "Tahoma"
 }
 
 .main-section > p {
 	font-size: 2rem;
+	width: 80%;
+}
+
+#rule-agreement {
+	margin-top: -5rem;
+	font-family: "Kanit", "Tahoma";
+	font-size: 2rem;
+	font-weight: 100;
+}
+
+.rule-container {
+	margin-left: 1rem;
+}
+
+/* Rule headers */
+.rule-container > h2 {
+	font-size: 3rem;
+	text-decoration: underline var(--accent2);
+	font-family: 'Josefin Slab', 'Times New Roman';
+	font-weight: 700;
+}
+
+/* Rule paragraphs */
+.rule-container > p {
+	margin-left: 1rem;
+	padding-left: 1rem;
+
+	border-left: 5px solid var(--accent2);
+	border-radius: 8px;
+	
+	font-size: 1.5rem;
+	font-family: 'Kanit', 'Tahoma';
+	font-weight: 300;
 }
 
 footer {
@@ -225,9 +265,14 @@ footer {
 
 #footer_information {
 	justify-content: center;
+	text-align: center;
 	max-width: 60vw;
 	min-width: 800px;
 	margin: auto;
+}
+
+#footer_information > h1:hover {
+	cursor: default;
 }
 
 address {
@@ -235,6 +280,10 @@ address {
 	margin-top: 60px;
 	font-size: 1.3rem;
 	font-weight: 600;
+}
+
+address:hover {
+	cursor: default;
 }
 
 @keyframes discordRotate {
