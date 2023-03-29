@@ -8,7 +8,7 @@
 	--patreonMain: #f1465a;
 }
 
-/*Makes it so clicking links to elements smoothly scrolls to them instead of teleporting.*/
+/* Makes it so clicking links to elements smoothly scrolls to them instead of teleporting. */
 @media (prefers-reduced-motion: no-preference) {
   * {
     scroll-behavior: smooth;
@@ -40,7 +40,7 @@ body {
 	color: white;
 	opacity: 0.7;
 
-	transition: all 0.4s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
 #scroll_message:hover {
@@ -85,7 +85,7 @@ body {
 	
 	text-decoration: none;
 	color: white;
-	font-family: 'Cardo', serif;
+	font-family: 'Cardo', 'Serif';
 	font-size: 3rem;
 	
 	opacity: 0.7;
