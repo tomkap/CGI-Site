@@ -301,6 +301,7 @@ address {
 
 address:hover {
 	cursor: default;
+	color: pink;
 }
 
 @keyframes discordRotate {
